@@ -68,3 +68,14 @@ enum CardType { Ace = 1, Two, Three, Four }
 let cardType: string = CardType[2]
 console.log(cardType);
 
+// Union Types
+let x: number | string;
+let y: number | null;
+
+x = '1234';
+x = 1234;
+
+// x = true; --> Error
+// y = false;
+
+

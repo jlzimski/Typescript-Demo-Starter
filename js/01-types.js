@@ -62,4 +62,11 @@ var CardType;
 })(CardType || (CardType = {}));
 var cardType = CardType[2];
 console.log(cardType);
+// Union Types
+var x;
+var y;
+x = '1234';
+x = 1234;
+// x = true; --> Error
+// y = false;
 //# sourceMappingURL=01-types.js.map
