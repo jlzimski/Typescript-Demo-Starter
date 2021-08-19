@@ -41,4 +41,25 @@ var sheriff = new Persons2();
 sheriff.firstName = "Sheriff";
 sheriff.lastName = "Holler";
 sheriff.sayHelloToFullName;
+// ===================================
+//      2.10
+// ===================================
+// Constructors
+var Game = /** @class */ (function () {
+    function Game(name, maker) {
+        this.gameName = name;
+        this.gameMaker = maker;
+    }
+    return Game;
+}());
+var battleship = new Game('Battleship', 'Hasbro');
+// without constructor
+var GameWithoutConstructor = /** @class */ (function () {
+    function GameWithoutConstructor() {
+    }
+    return GameWithoutConstructor;
+}());
+var monopoly = new GameWithoutConstructor();
+monopoly.gameName = 'Monopoly';
+monopoly.gameMaker = 'Hasbro';
 //# sourceMappingURL=03-classes.js.map

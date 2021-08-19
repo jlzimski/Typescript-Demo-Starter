@@ -45,3 +45,30 @@ sheriff.firstName = "Sheriff";
 sheriff.lastName = "Holler";
 sheriff.sayHelloToFullName
 
+// ===================================
+//      2.10
+// ===================================
+// Constructors
+class Game {
+    constructor(name: string, maker: string) {
+        this.gameName = name;
+        this.gameMaker = maker;
+    }
+    gameName: string;
+    gameMaker: string;
+}
+
+let battleship: Game = new Game('Battleship', 'Hasbro');
+// without constructor
+class GameWithoutConstructor {
+    gameName: string;
+    gameMaker: string;
+}
+
+let monopoly: GameWithoutConstructor = new GameWithoutConstructor();
+
+monopoly.gameName = 'Monopoly';
+monopoly.gameMaker = 'Hasbro';
+
+
+
