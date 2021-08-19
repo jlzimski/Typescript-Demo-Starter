@@ -156,5 +156,27 @@ var Stores = /** @class */ (function () {
     }
     return Stores;
 }());
-var ikea = new Stores('Ikea', 'Fishers');
+var target = new Stores('Target', 'Fishers');
+// =======================================================
+//      2.13
+// =======================================================
+// Accessors
+var Employee = /** @class */ (function (_super) {
+    __extends(Employee, _super);
+    function Employee() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Employee.prototype.getSalary = function () {
+        return this._salary.toString();
+    };
+    Employee.prototype.setSalary = function (newSalary) {
+        this._salary = newSalary;
+    };
+    return Employee;
+}(Person));
+var newEmployee = new Employee();
+newEmployee.setSalary(30000);
+// newEmployee._salary = 0; --> this breaks
+var salaryResult = newEmployee.getSalary();
+console.log("The salary is", salaryResult);
 //# sourceMappingURL=03-classes.js.map

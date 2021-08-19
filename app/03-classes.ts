@@ -143,9 +143,29 @@ class Stores {
     constructor(public name: string, public city: string){}
 }
 
-let ikea: Stores = new Stores('Ikea', 'Fishers');
+let target: Stores = new Stores('Target', 'Fishers');
 
+// =======================================================
+//      2.13
+// =======================================================
+// Accessors
+class Employee extends Person{
+    private _salary: number;
 
+    getSalary(): string {
+        return this._salary.toString();
+    }
+
+    setSalary(newSalary: number) {
+        this._salary = newSalary;
+    }
+}
+
+let newEmployee: Employee = new Employee();
+newEmployee.setSalary(30000);
+// newEmployee._salary = 0; --> this breaks
+let salaryResult: string = newEmployee.getSalary();
+console.log("The salary is", salaryResult);
 
 
 
