@@ -1,10 +1,13 @@
+// ===========================================
+//      2.05
+// ===========================================
 function demoFunction(someNum){
     return someNum;
 }
 
 demoFunction(1); // 1
 demoFunction("stuff"); // 2
-demoFunction(1, "Stuff"); // 3
+// demoFunction(1, "Stuff"); // 3
 
 // TypeScript allows us to bring types to our parameters and limits to the number of arguments we pass
 function addNumbers(numOne: number, numTwo: number){
@@ -15,8 +18,8 @@ function addNumbers(numOne: number, numTwo: number){
 addNumbers(1, 2);
 
 // Errors
-addNumbers(1, 2, 3);
-addNumbers(1, 2, 3, "Foo");
+// addNumbers(1, 2, 3);
+// addNumbers(1, 2, 3, "Foo");
 
 // Practice
 function fullName(firstName: string, lastName: string){
@@ -31,7 +34,7 @@ fullName("Jen", "Zimski");
 function hello(greetingString){
     return greetingString;
 }
-foo(1);
+// foo(1);
 
 // Refactored in TypeScript
 function sayHello(name: string) : string {
@@ -39,7 +42,7 @@ function sayHello(name: string) : string {
 }
 
 sayHello("Kenn");
-sayHello(1);
+// sayHello(1);
 
 // Practice
 // function validateUser(username: string, password: string) : boolean{

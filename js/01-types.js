@@ -1,3 +1,6 @@
+// ===============================================================
+//      2.02
+// ===============================================================
 var username = "instructor";
 var password = "Letmein1234";
 var instructorId = 5;
@@ -9,6 +12,9 @@ var isMarried;
 var greeting = "Hello";
 // let password: string; --> this is a type error
 // password = 1234;
+// ================================================================
+//      2.03
+// ================================================================
 var age = 40;
 var currentYear = 2018;
 var decimal = 6; // supports ES6 octal literals
@@ -62,6 +68,9 @@ var CardType;
 })(CardType || (CardType = {}));
 var cardType = CardType[2];
 console.log(cardType);
+// =========================================================
+//      2.04
+// =========================================================
 // Union Types
 var x;
 var y;

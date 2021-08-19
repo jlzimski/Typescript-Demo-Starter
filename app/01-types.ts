@@ -1,3 +1,6 @@
+// ===============================================================
+//      2.02
+// ===============================================================
 let username: string = "instructor";
 let password: string = "Letmein1234";
 let instructorId: number = 5;
@@ -13,6 +16,9 @@ let greeting = "Hello";
 // let password: string; --> this is a type error
 // password = 1234;
 
+// ================================================================
+//      2.03
+// ================================================================
 let age: number = 40;
 let currentYear: number = 2018;
 
@@ -68,6 +74,9 @@ enum CardType { Ace = 1, Two, Three, Four }
 let cardType: string = CardType[2]
 console.log(cardType);
 
+// =========================================================
+//      2.04
+// =========================================================
 // Union Types
 let x: number | string;
 let y: number | null;

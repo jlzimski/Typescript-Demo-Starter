@@ -69,6 +69,84 @@ let monopoly: GameWithoutConstructor = new GameWithoutConstructor();
 
 monopoly.gameName = 'Monopoly';
 monopoly.gameMaker = 'Hasbro';
+// ================================================================
+//      2.11
+// ================================================================
+// Inheritance
+class Vehicle {
+    type: string;
+    make: string;
+    model: string;
+    manufactureYear: number;
+    runs: boolean;
+    topSpeed: number;
+}
+// Example 1
+class Automobile extends Vehicle {
+    isSelfDriving: boolean;
+}
+
+let myCar: Automobile = new Automobile();
+myCar.isSelfDriving = false;
+myCar.topSpeed = 200;
+myCar.make = "Volvo";
+
+// Example 2
+class Motorcycle extends Vehicle {
+    easyToDoWheelie: boolean;
+}
+
+let myMotorcycle: Motorcycle = new Motorcycle();
+myMotorcycle.easyToDoWheelie = true;
+myMotorcycle.topSpeed = 180;
+
+// Practice
+class Animal {
+    isTwoLegged: boolean;
+    color: string;
+    habitat: string;
+}
+
+class Bear extends Animal {
+    type: string;
+}
+
+let myBear: Bear = new Bear();
+myBear.habitat = "iceberg";
+myBear.type = "polar";
+
+class Flamingo extends Animal {
+    isPlastic: boolean;
+}
+
+let myFlamingo: Flamingo = new Flamingo();
+myFlamingo.color = "pink";
+myFlamingo.isTwoLegged = true;
+myFlamingo.isPlastic = true;
+
+// =====================================================
+//      2.12
+// =====================================================
+// Parameter Properties
+class Store {
+    constructor(name: string, city: string) {
+        this.name = name;
+        this.city = city;
+    }
+    name: string;
+    city: string;
+}
+
+let ikea: Store = new Store('Ikea', 'Fishers');
+// with TypeScript
+class Stores {
+    constructor(public name: string, public city: string){}
+}
+
+let ikea: Stores = new Stores('Ikea', 'Fishers');
+
+
+
 
 
 
