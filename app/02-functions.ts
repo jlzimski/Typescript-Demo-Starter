@@ -66,3 +66,4 @@ function printName(fName: string, lName: string, mName?: string){
 
 printName("Jen", "Zimski");
 printName("Jen", "Zimski", "Louise");
+// Optionals must go after required

@@ -53,4 +53,5 @@ function printName(fName, lName, mName) {
 }
 printName("Jen", "Zimski");
 printName("Jen", "Zimski", "Louise");
+// Optionals must go after required
 //# sourceMappingURL=02-functions.js.map
